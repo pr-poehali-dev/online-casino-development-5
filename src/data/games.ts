@@ -28,6 +28,7 @@ export const games: Game[] = [
   { id: 13, title: 'Kamikaze', provider: 'NEXUS Originals', category: 'crash', rtp: 97.0, rating: 4.9, players: 3821, badge: 'HOT', emoji: '✈️', color: '#ff4500' },
   { id: 14, title: 'Apple of Fortune', provider: 'NEXUS Originals', category: 'crash', rtp: 98.0, rating: 4.8, players: 2940, badge: 'NEW', emoji: '🍎', color: '#22c55e' },
   { id: 15, title: 'Aviamasters', provider: 'NEXUS Originals', category: 'crash', rtp: 97.5, rating: 5.0, players: 5120, badge: 'HOT', emoji: '🛩️', color: '#38bdf8' },
+  { id: 16, title: 'Crazy Time', provider: 'NEXUS Originals', category: 'live', rtp: 96.8, rating: 5.0, players: 8740, badge: 'HOT', emoji: '🎪', color: '#f59e0b' },
 ];
 
 export const categories = [

@@ -14,6 +14,7 @@ import ProfilePage from "@/pages/ProfilePage";
 import KamikazePage from "@/pages/KamikazePage";
 import AppleOfFortunePage from "@/pages/AppleOfFortunePage";
 import AviamastersPage from "@/pages/AviamastersPage";
+import CrazyTimePage from "@/pages/CrazyTimePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/games/kamikaze" element={<KamikazePage />} />
           <Route path="/games/apple-of-fortune" element={<AppleOfFortunePage />} />
           <Route path="/games/aviamasters" element={<AviamastersPage />} />
+          <Route path="/games/crazy-time" element={<CrazyTimePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

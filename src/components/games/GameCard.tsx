@@ -11,6 +11,7 @@ const GAME_ROUTES: Record<string, string> = {
   'Kamikaze': '/games/kamikaze',
   'Apple of Fortune': '/games/apple-of-fortune',
   'Aviamasters': '/games/aviamasters',
+  'Crazy Time': '/games/crazy-time',
 };
 
 export default function GameCard({ game }: GameCardProps) {
