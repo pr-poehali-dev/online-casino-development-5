@@ -26,6 +26,7 @@ export const games: Game[] = [
   { id: 11, title: 'Aztec Gold', provider: 'NetEnt', category: 'slots', rtp: 95.5, rating: 4.4, players: 987, emoji: '🏺', color: '#ffd600' },
   { id: 12, title: 'Speed Roulette', provider: 'Evolution', category: 'roulette', rtp: 97.3, rating: 4.7, players: 456, badge: 'HOT', emoji: '🎯', color: '#ff006e' },
   { id: 13, title: 'Kamikaze', provider: 'NEXUS Originals', category: 'crash', rtp: 97.0, rating: 4.9, players: 3821, badge: 'HOT', emoji: '✈️', color: '#ff4500' },
+  { id: 14, title: 'Apple of Fortune', provider: 'NEXUS Originals', category: 'crash', rtp: 98.0, rating: 4.8, players: 2940, badge: 'NEW', emoji: '🍎', color: '#22c55e' },
 ];
 
 export const categories = [

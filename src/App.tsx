@@ -12,6 +12,7 @@ import SupportPage from "@/pages/SupportPage";
 import AboutPage from "@/pages/AboutPage";
 import ProfilePage from "@/pages/ProfilePage";
 import KamikazePage from "@/pages/KamikazePage";
+import AppleOfFortunePage from "@/pages/AppleOfFortunePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/about" element={<Layout><AboutPage /></Layout>} />
           <Route path="/profile" element={<Layout><ProfilePage /></Layout>} />
           <Route path="/games/kamikaze" element={<KamikazePage />} />
+          <Route path="/games/apple-of-fortune" element={<AppleOfFortunePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
