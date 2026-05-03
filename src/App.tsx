@@ -1,10 +1,16 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import Layout from "@/components/layout/Layout";
+import HomePage from "@/pages/HomePage";
+import GamesPage from "@/pages/GamesPage";
+import TournamentsPage from "@/pages/TournamentsPage";
+import BonusesPage from "@/pages/BonusesPage";
+import SupportPage from "@/pages/SupportPage";
+import AboutPage from "@/pages/AboutPage";
+import ProfilePage from "@/pages/ProfilePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,8 +22,13 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/" element={<Layout><HomePage /></Layout>} />
+          <Route path="/games" element={<Layout><GamesPage /></Layout>} />
+          <Route path="/tournaments" element={<Layout><TournamentsPage /></Layout>} />
+          <Route path="/bonuses" element={<Layout><BonusesPage /></Layout>} />
+          <Route path="/support" element={<Layout><SupportPage /></Layout>} />
+          <Route path="/about" element={<Layout><AboutPage /></Layout>} />
+          <Route path="/profile" element={<Layout><ProfilePage /></Layout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

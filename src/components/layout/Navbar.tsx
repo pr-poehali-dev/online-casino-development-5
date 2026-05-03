@@ -44,7 +44,7 @@ export default function Navbar() {
                   ? 'text-[#00f5ff] border-b border-[#00f5ff]'
                   : 'text-gray-400 hover:text-[#00f5ff]'}`}
             >
-              <Icon name={item.icon as any} size={14} />
+              <Icon name={item.icon} size={14} />
               {item.label}
             </Link>
           ))}
@@ -80,7 +80,7 @@ export default function Navbar() {
               className={`flex items-center gap-3 px-6 py-4 font-cyber text-xs tracking-widest uppercase border-b border-[rgba(0,245,255,0.05)]
                 ${location.pathname === item.path ? 'text-[#00f5ff]' : 'text-gray-400'}`}
             >
-              <Icon name={item.icon as any} size={16} />
+              <Icon name={item.icon} size={16} />
               {item.label}
             </Link>
           ))}
