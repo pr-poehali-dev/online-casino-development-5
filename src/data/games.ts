@@ -25,6 +25,7 @@ export const games: Game[] = [
   { id: 10, title: 'VR Poker', provider: 'Microgaming', category: 'poker', rtp: 99.2, rating: 4.8, players: 234, badge: 'NEW', emoji: '🥽', color: '#00ff9f' },
   { id: 11, title: 'Aztec Gold', provider: 'NetEnt', category: 'slots', rtp: 95.5, rating: 4.4, players: 987, emoji: '🏺', color: '#ffd600' },
   { id: 12, title: 'Speed Roulette', provider: 'Evolution', category: 'roulette', rtp: 97.3, rating: 4.7, players: 456, badge: 'HOT', emoji: '🎯', color: '#ff006e' },
+  { id: 13, title: 'Kamikaze', provider: 'NEXUS Originals', category: 'crash', rtp: 97.0, rating: 4.9, players: 3821, badge: 'HOT', emoji: '✈️', color: '#ff4500' },
 ];
 
 export const categories = [
@@ -34,6 +35,7 @@ export const categories = [
   { id: 'poker', label: 'Покер', icon: '🃏' },
   { id: 'blackjack', label: 'Блэкджек', icon: '🂡' },
   { id: 'live', label: 'Live Casino', icon: '📡' },
+  { id: 'crash', label: 'Краш-игры', icon: '✈️' },
 ];
 
 export const providers = ['Все', 'NetEnt', 'Evolution', 'Playtech', 'Microgaming', 'Pragmatic'];

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 import type { Game } from '@/data/games';
 
@@ -6,8 +7,18 @@ interface GameCardProps {
   game: Game;
 }
 
+const GAME_ROUTES: Record<string, string> = {
+  'Kamikaze': '/games/kamikaze',
+};
+
 export default function GameCard({ game }: GameCardProps) {
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
+
+  const handlePlay = () => {
+    const route = GAME_ROUTES[game.title];
+    if (route) navigate(route);
+  };
 
   return (
     <div
@@ -40,7 +51,7 @@ export default function GameCard({ game }: GameCardProps) {
         {/* Play overlay */}
         {hovered && (
           <div className="absolute inset-0 bg-[#050810]/60 flex items-center justify-center animate-fade-in">
-            <button className="cyber-btn-primary px-6 py-2 text-xs rounded-sm">
+            <button onClick={handlePlay} className="cyber-btn-primary px-6 py-2 text-xs rounded-sm">
               ИГРАТЬ
             </button>
           </div>

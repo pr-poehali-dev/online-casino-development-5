@@ -11,6 +11,7 @@ import BonusesPage from "@/pages/BonusesPage";
 import SupportPage from "@/pages/SupportPage";
 import AboutPage from "@/pages/AboutPage";
 import ProfilePage from "@/pages/ProfilePage";
+import KamikazePage from "@/pages/KamikazePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/support" element={<Layout><SupportPage /></Layout>} />
           <Route path="/about" element={<Layout><AboutPage /></Layout>} />
           <Route path="/profile" element={<Layout><ProfilePage /></Layout>} />
+          <Route path="/games/kamikaze" element={<KamikazePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
