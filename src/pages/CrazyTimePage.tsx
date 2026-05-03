@@ -638,7 +638,7 @@ export default function CrazyTimePage() {
             <div className="cyber-card rounded-sm p-4 mt-4" style={{ border: '1px solid rgba(245,158,11,0.15)' }}>
               <div className="font-cyber text-xs text-[#f59e0b] tracking-widest mb-3">// ИГРОКИ</div>
               <div className="space-y-2">
-                {LIVE_PLAYERS.map((p, i) => (
+                {LIVE_BETS.map((p, i) => (
                   <div key={i} className={`flex items-center gap-2 py-1.5 px-2 rounded-sm ${p.user === 'CyberWolf88' ? 'bg-[#f59e0b]/5 border border-[rgba(245,158,11,0.1)]' : ''}`}>
                     <span>{p.avatar}</span>
                     <div className="flex-1">
